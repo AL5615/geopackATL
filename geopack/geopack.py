@@ -11,11 +11,11 @@ def init_igrf():
 
     global igrf, nmn,mns, nyear,years,yruts
 
-    print('Load IGRF coefficients ...')
+    
 
-    bfn = 'igrf13coeffs.txt'
+    bfn = 'igrf14coeffs.txt'
     locffn = os.path.join(os.path.dirname(__file__), bfn)
-
+    print('Loaded', bfn)
     nheader = 3
     with open(locffn, 'r') as file:
         for i in range(nheader):
